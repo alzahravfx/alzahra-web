@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://mhsnkhnpr.gtsb.io/sitemap.xml

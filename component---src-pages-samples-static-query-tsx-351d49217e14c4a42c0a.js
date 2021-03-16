@@ -1,0 +1,2 @@
+(self.webpackChunkalzahravfx_website=self.webpackChunkalzahravfx_website||[]).push([[701],{4854:function(e,a,t){"use strict";t.r(a);var n=t(7294),l=t(5444);a.default=function(){var e=(0,l.useStaticQuery)(r);return n.createElement("div",null,e.allMdx.nodes.map((function(e){return n.createElement("span",{key:e.id},n.createElement("div",null,e.id)," ",n.createElement("br",null))})))};var r="162947461"}}]);
+//# sourceMappingURL=component---src-pages-samples-static-query-tsx-351d49217e14c4a42c0a.js.map
