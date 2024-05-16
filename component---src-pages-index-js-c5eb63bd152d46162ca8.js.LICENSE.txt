@@ -1,0 +1,6 @@
+/**
+ * @component HoverVideoPlayer
+ * @license MIT
+ *
+ * @param {HoverVideoPlayerProps} props
+ */
