@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://alzahravfx.com/sitemap.xml
