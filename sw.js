@@ -34,24 +34,36 @@ self.__precacheManifest = [
     "url": "static/icons/favicon.png"
   },
   {
-    "url": "styles.4de3f4e84094f3fa216b.css"
+    "url": "fonts/MarcellusSC-Regular.woff2",
+    "revision": "9d8ec3c11de02027933d7011d2b4a9c7"
   },
   {
-    "url": "framework-aca085d81a618198519f.js"
-  },
-  {
-    "url": "app-e6a33a0b4dbe0784a1c9.js"
-  },
-  {
-    "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "dad750865d9451a1cee90a2e34a95d05"
+    "url": "fonts/RacingSansOne-Regular.woff2",
+    "revision": "31b47a22e24370d15178114a8120b192"
   },
   {
     "url": "fonts/Raleway-Variable.woff2",
     "revision": "636c5434893fd7a078f1a6b045293f5a"
   },
   {
-    "url": "webpack-runtime-08a4627fe81a880d95e6.js"
+    "url": "fonts/Sahel-VF.woff2",
+    "revision": "de77f757f9c4ebc1148856d25ded1887"
+  },
+  {
+    "url": "framework-aca085d81a618198519f.js"
+  },
+  {
+    "url": "app-9130e831b6085b4afb84.js"
+  },
+  {
+    "url": "offline-plugin-app-shell-fallback/index.html",
+    "revision": "dbb73342b3ae6885a6297f6342baa28d"
+  },
+  {
+    "url": "styles.088fb4f629ea5c83761b.css"
+  },
+  {
+    "url": "webpack-runtime-fa35727913c32694d97c.js"
   },
   {
     "url": "manifest.webmanifest",
@@ -165,7 +177,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-e6a33a0b4dbe0784a1c9.js`))) {
+  if (!resources || !(await caches.match(`/app-9130e831b6085b4afb84.js`))) {
     return await fetch(event.request)
   }
 

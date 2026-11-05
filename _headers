@@ -2,6 +2,10 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
 
+# NOTE: GitHub Pages ignores this file (everything is max-age=600 via Fastly).
+# These rules apply on Netlify / Cloudflare Pages. For GitHub Pages + Cloudflare
+# proxy, set a Cache Rule: URI path starts with /static/ → Edge TTL 1 year, Browser TTL 1 year.
+
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable
 
@@ -17,6 +21,28 @@
 /*.woff2
   Cache-Control: public, max-age=31536000, immutable
 
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.avif
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.jpeg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.mp4
+  Cache-Control: public, max-age=31536000, immutable
+  Accept-Ranges: bytes
+
 /
   Cache-Control: public, max-age=0, must-revalidate
 
@@ -26,6 +52,5 @@
 /page-data/*
   Cache-Control: public, max-age=0, must-revalidate
 
-/*.mp4
-  Cache-Control: public, max-age=86400
-  Accept-Ranges: bytes
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate
